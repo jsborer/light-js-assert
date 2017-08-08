@@ -8,9 +8,9 @@ It is very simple assert function.
   
   function test(a, b, c, d, e, f, g, h, i) {
     ASSERT(
-      'string',       // a. - first argument string
-      'number',       // b. - second number
-      'number',       // c. - number
+      'string*',      // a. - first argument string or null
+      'number',       // b. - second only number
+      'number*',      // c. - number or null
       '*',            // d. - any required argument
       '~',            // e. f. g. - arguments no matter
       'string',       // h. - before last argument must be string
